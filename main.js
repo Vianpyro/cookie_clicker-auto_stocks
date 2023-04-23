@@ -32,7 +32,7 @@ function shouldBuy(good) {
     if (!good.active) {
         return false;
     }
-    if (good.stock > 0) {
+    if (good.stock === Game.ObjectsById[5].minigame.getGoodMaxStock(good)) {
         return false;
     }
     if (good.val > (stocksMarketMinigame.getRestingVal(good.id) * 0.1)) {
@@ -102,12 +102,9 @@ const autoStocks = {
     autoStocks:function() {
         stocksMarketMinigame = Game.ObjectsById[5].minigame;
         if (!stocksMarketMinigame) {
-            setTimeout(
-                () => {
-                    this.autoStocks();
-                },
-                500
-            );
+            setTimeout(() => {
+                this.autoStocks();
+            }, 500);
             return;
         }
         notify({
