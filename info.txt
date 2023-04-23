@@ -1,12 +1,11 @@
 {
  "Name": "Auto Stocks",
  "ID": "auto stocks",
- "Author": "Arafek (changes by Vianpyro)",
- "Description": "A very simple automatic stocks trading mod, buys when stocks are low and not on a downward trend, sells when stocks are high and not on an upward trend.",
+ "Author": "Arafek & Vianpyro",
+ "Description": "Remake of @arafek's very simple automatic stocks trading mod for the game Cookie Clicker -- buys when stocks are low and not on a downward trend, sells when stocks are high and not on an upward trend.",
  "ModVersion": 1,
  "GameVersion": 2.048,
  "Date": "23/04/2023",
  "Disabled": 1,
  "AllowSteamAchievs": 1,
- "Workshop": "2896268719"
 }
