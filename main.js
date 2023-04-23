@@ -32,7 +32,7 @@ function shouldBuy(good) {
     if (!good.active) {
         return false;
     }
-    if (good.stock === Game.ObjectsById[5].minigame.getGoodMaxStock(good)) {
+    if (good.stock === stocksMarketMinigame.getGoodMaxStock(good)) {
         return false;
     }
     if (good.val > (stocksMarketMinigame.getRestingVal(good.id) * 0.1)) {
